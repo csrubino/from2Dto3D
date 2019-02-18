@@ -3,16 +3,16 @@
 We present two new methods based on Interval Analysis and
 Computational Geometry for estimating the 3D occupancy and position
 of objects from image sequences. Given a calibrated set of images, the
-proposed frameworks rst detect objects using o-the-shelf object detectors
+proposed frameworks rst detect objects using off-the-shelf object detectors
 and then match bounding boxes in multiple views. The 2D semantic
-information given by the bounding boxes are used to eciently recover
+information given by the bounding boxes are used to efficiently recover
 3D object position and occupancy using solely geometrical constraints in
 multiple views.
 
 ## Installation
 
 The MATLAB code does not provide all the dependencies requested.
-In the following links you can find some of the dependencies:
+In the following links you can find the dependencies:
 
 vectarrow.m  
 https://github.com/daviddoria/Examples/blob/master/Matlab/ransac%20line/vectarrow.m
@@ -38,10 +38,3 @@ https://au.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/40382
 MinVolEllipse.m
 https://kr.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/9542/versions/3/previews/MinVolEllipse.m
 
-
-
-
-
-
-
-```
