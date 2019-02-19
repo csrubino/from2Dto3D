@@ -5,7 +5,7 @@ We present two new methods based on Interval Analysis and Computational Geometry
 
 To execute the code, run main.m contained into the main folder. <br> <br>
 
-This code is related to the paper "3D Object Localisation from Multi-view Image Detections". <br>
+This code is related to the paper "Lifting 2D object detections to 3D: A geometric approach in multiple views". <br>
 If you use this project for your research, please cite:
 
 @article{rubino2017lifting, <br>
