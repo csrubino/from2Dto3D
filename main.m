@@ -5,16 +5,7 @@ clc
 addpath(genpath('./functions'));
 
 %% Load the datasets
-
-objSeq = {'iron','duck','ape','can','driller','benchvise','glue','cat','lamp','phone'};
-dtstNm = {'ACCV','TUW','KITTI','KINECT','FORD','SYNTH','TANGO'};
-dataset         = 1;      % The number of the referred DATASET
-seq             = 2;      % Sequences for the iterations
-base_dir = '../datasetsfd';
-
-[M,K,bbx,Imm,GT,frVw,camSz, or] = datasetTUW(base_dir, seq);
-
-
+load('./data/seq7_TUW.mat')
 
 %% RUN INTLAB
 
@@ -35,7 +26,7 @@ end
 
 %% PLOT dataset
 
-outFrame = finalPlot( Rec1, M, bbx, Imm, GT, frVw, camSz, 0, 1, 0);
+outFrame = finalPlot( Rec1, M, bbx, Imm, GT, frVw, 7, 0, 1, 0);
 
 
 %% Interval Analysis
@@ -43,7 +34,8 @@ outFrame = finalPlot( Rec1, M, bbx, Imm, GT, frVw, camSz, 0, 1, 0);
 Transf              = eye(4);
 [Rec2,bbx3d,C3D]    = computeCubes(bbx, P, frVw, GT, Transf, false);
 
-for i=1:length(GT)
+f
+i=1:length(GT)
     if ~isempty(GT(i))
         if isfield(GT(i),'V')
            plot3(GT(i).V(:,1),GT(i).V(:,2),GT(i).V(:,3),'.m'); 
