@@ -34,8 +34,7 @@ outFrame = finalPlot( Rec1, M, bbx, Imm, GT, frVw, 7, 0, 1, 0);
 Transf              = eye(4);
 [Rec2,bbx3d,C3D]    = computeCubes(bbx, P, frVw, GT, Transf, false);
 
-f
-i=1:length(GT)
+for i=1:length(GT)
     if ~isempty(GT(i))
         if isfield(GT(i),'V')
            plot3(GT(i).V(:,1),GT(i).V(:,2),GT(i).V(:,3),'.m'); 
